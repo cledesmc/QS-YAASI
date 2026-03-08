@@ -1,4 +1,4 @@
-![](https://boletinstatics.blob.core.windows.net/imagenes/yacs_logo.png)
+![YACS](https://boletinstatics.blob.core.windows.net/imagenes/yacs_logo.png)
 # YACS — Yet Another Claude Skills Repo
 
 > Una colección diferente de **Skills para Claude Code** que expanden lo que puedes hacer en cada sesión: desde auditorías de seguridad hasta diseño de sistemas, gamificación de procesos o simplemente pensar diferente.
