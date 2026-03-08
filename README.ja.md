@@ -23,11 +23,11 @@
 
 ```
 skills/
-├── calidad-y-seguridad/          セキュリティ監査、分析、改善
-├── desarrollo/                    ゲーミフィケーション、技術負債、計画
-├── analisis-diseno-y-arquitectura/ ADR、アーキテクチャスパーク、パターン
-├── debate-y-confrontacion-de-ideas/ レッドチーム、ブレインストーミング、アイデア検証
-└── datos-e-interpretacion/        データストーリーテリング、データ討論、メトリクス罠
+├── quality-and-security/          セキュリティ監査、分析、改善
+├── development/                    ゲーミフィケーション、技術負債、計画
+├── analisis-design-architecture/ ADR、アーキテクチャスパーク、パターン
+├── idea-confrontation-and-debate/ レッドチーム、ブレインストーミング、アイデア検証
+└── data-and-interpretation/        データストーリーテリング、データ討論、メトリクス罠
 ```
 
 ---

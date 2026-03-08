@@ -23,11 +23,11 @@ No son komantos xenéricos. Kah skill está diseñao pa resolverá un tipo de pr
 
 ```
 skills/
-├── calidad-y-seguridad/          Auditoria, analisis i mejora de segurihá
-├── desarrollo/                    Gamifikasión, deua teknika, planifikasión
-├── analisis-diseno-y-arquitectura/ ADRs, sparks arquitektoniks, patrones
-├── debate-y-confrontacion-de-ideas/ Red team, brainstorming, balihásion de ideas
-└── datos-e-interpretacion/        Data storytelling, debah de datos, trampas metriks
+├── quality-and-security/          Auditoria, analisis i mejora de segurihá
+├── development/                    Gamifikasión, deua teknika, planifikasión
+├── analisis-design-architecture/ ADRs, sparks arquitektoniks, patrones
+├── idea-confrontation-and-debate/ Red team, brainstorming, balihásion de ideas
+└── data-and-interpretation/        Data storytelling, debah de datos, trampas metriks
 ```
 
 ---
@@ -82,7 +82,7 @@ Xenera una simiya de refleksión sobre la kalihá del softwé — algo pa tiá d
 
 ---
 
-### 💻 Desarrollo
+### 💻 development
 
 #### `/gamify`
 Disena una estratexia de gamifikasión pa un proseso interno de la empresa. Mapea motibásiones, selekkiona mekanicas, disena progresión i ebita anti-patrones.

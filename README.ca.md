@@ -23,11 +23,11 @@ No són comandaments genèrics. Cada skill està dissenyat per resoldre un tipus
 
 ```
 skills/
-├── calidad-y-seguridad/          Auditoria, anàlisi i millora de seguretat
-├── desarrollo/                    Gamificació, deute tècnic, planificació
-├── analisis-diseno-y-arquitectura/ ADRs, sparks arquitectònics, patrons
-├── debate-y-confrontacion-de-ideas/ Red team, brainstorming, validació d'idees
-└── datos-e-interpretacion/        Data storytelling, debat de dades, trampes mètriques
+├── quality-and-security/          Auditoria, anàlisi i millora de seguretat
+├── development/                    Gamificació, deute tècnic, planificació
+├── analisis-design-architecture/ ADRs, sparks arquitectònics, patrons
+├── idea-confrontation-and-debate/ Red team, brainstorming, validació d'idees
+└── data-and-interpretation/        Data storytelling, debat de dades, trampes mètriques
 ```
 
 ---

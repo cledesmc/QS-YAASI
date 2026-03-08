@@ -23,11 +23,11 @@ Non son comandos xenéricos. Cada skill está deseñado para resolver un tipo de
 
 ```
 skills/
-├── calidad-y-seguridad/          Auditoría, análisis e mellora de seguridade
-├── desarrollo/                    Gamificación, débeda técnica, planificación
-├── analisis-diseno-y-arquitectura/ ADRs, sparks arquitectónicos, patróns
-├── debate-y-confrontacion-de-ideas/ Red team, brainstorming, validación de ideas
-└── datos-e-interpretacion/        Data storytelling, debate de datos, trampas métricas
+├── quality-and-security/          Auditoría, análisis e mellora de seguridade
+├── development/                    Gamificación, débeda técnica, planificación
+├── analisis-design-architecture/ ADRs, sparks arquitectónicos, patróns
+├── idea-confrontation-and-debate/ Red team, brainstorming, validación de ideas
+└── data-and-interpretation/        Data storytelling, debate de datos, trampas métricas
 ```
 
 ---

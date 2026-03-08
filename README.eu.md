@@ -23,11 +23,11 @@ Ez dira komando generioak. Skill bakoitza arazo-mota zehatz bati konpondu behar 
 
 ```
 skills/
-├── calidad-y-seguridad/          Segurtasun-auditatzea, analisia eta hobekuntza
-├── desarrollo/                    Gamifikazioa, deuda teknikoa, plangintza
-├── analisis-diseno-y-arquitectura/ ADRak, arkitektura-spark-ak, patroiak
-├── debate-y-confrontacion-de-ideas/ Red team-a, ideien hausnarketa, ideien balioztapena
-└── datos-e-interpretacion/        Datuen istorioak, datuen eztabaida, metrika-trampa
+├── quality-and-security/          Segurtasun-auditatzea, analisia eta hobekuntza
+├── development/                    Gamifikazioa, deuda teknikoa, plangintza
+├── analisis-design-architecture/ ADRak, arkitektura-spark-ak, patroiak
+├── idea-confrontation-and-debate/ Red team-a, ideien hausnarketa, ideien balioztapena
+└── data-and-interpretation/        Datuen istorioak, datuen eztabaida, metrika-trampa
 ```
 
 ---

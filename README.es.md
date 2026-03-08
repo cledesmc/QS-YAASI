@@ -51,11 +51,11 @@ Resultado esperado: **31 tests pasando** con 100% de éxito.
 
 ```
 skills/
-├── calidad-y-seguridad/          Auditoría, análisis y mejora de seguridad
-├── desarrollo/                    Gamificación, deuda técnica, planificación
-├── analisis-diseno-y-arquitectura/ ADRs, sparks arquitectónicas, patrones
-├── debate-y-confrontacion-de-ideas/ Red team, brainstorming, validación de ideas
-└── datos-e-interpretacion/        Data storytelling, debate de datos, trampas métricas
+├── quality-and-security/          Auditoría, análisis y mejora de seguridad
+├── development/                    Gamificación, deuda técnica, planificación
+├── analisis-design-architecture/ ADRs, sparks arquitectónicas, patrones
+├── idea-confrontation-and-debate/ Red team, brainstorming, validación de ideas
+└── data-and-interpretation/        Data storytelling, debate de datos, trampas métricas
 ```
 
 ---
@@ -94,7 +94,7 @@ Genera una semilla de reflexión sobre calidad de software — de la que tirar d
 
 ---
 
-### 💻 Desarrollo
+### 💻 development
 
 #### `/gamify`
 Diseña una estrategia de gamificación para un proceso interno de empresa. Mapea motivaciones, selecciona mecánicas, diseña progresión y evita anti-patrones.

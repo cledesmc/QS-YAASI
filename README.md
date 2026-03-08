@@ -23,11 +23,11 @@ They are not generic commands. Each skill is designed to solve a specific type o
 
 ```
 skills/
-├── calidad-y-seguridad/          Security audit, analysis and improvement
-├── desarrollo/                    Gamification, technical debt, planning
-├── analisis-diseno-y-arquitectura/ ADRs, architectural sparks, patterns
-├── debate-y-confrontacion-de-ideas/ Red team, brainstorming, idea validation
-└── datos-e-interpretacion/        Data storytelling, data debate, metric traps
+├── quality-and-security/          Security audit, analysis and improvement
+├── development/                    Gamification, technical debt, planning
+├── analisis-design-architecture/ ADRs, architectural sparks, patterns
+├── idea-confrontation-and-debate/ Red team, brainstorming, idea validation
+└── data-and-interpretation/        Data storytelling, data debate, metric traps
 ```
 
 ---
