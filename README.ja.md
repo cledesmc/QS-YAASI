@@ -34,13 +34,31 @@ skills/
 
 ## インストール
 
-### クイックインストール
+### オプション1: npx を使用（推奨）
 
 ```bash
-cd cli
+npx @mammals-at-work/yacs
+```
+
+インストール不要 — 直接実行されます。
+
+### オプション2: グローバルにインストール
+
+```bash
+npm install -g @mammals-at-work/yacs
+yacs
+```
+
+### オプション3: リポジトリから
+
+```bash
+git clone https://github.com/munchkin09/YACS.git
+cd YACS/cli
 npm install
 npm start
 ```
+
+---
 
 言語を選択して、インストールするスキルを選びましょう！
 

@@ -34,13 +34,31 @@ skills/
 
 ## Instalación
 
-### Instalación Rápida
+### Opción 1: Con npx (Recomendado)
 
 ```bash
-cd cli
+npx @mammals-at-work/yacs
+```
+
+Sen necesidade de instalar nada — execútase directamente.
+
+### Opción 2: Instalar globalmente
+
+```bash
+npm install -g @mammals-at-work/yacs
+yacs
+```
+
+### Opción 3: Desde o repositorio
+
+```bash
+git clone https://github.com/munchkin09/YACS.git
+cd YACS/cli
 npm install
 npm start
 ```
+
+---
 
 ¡Escolle o teu idioma e selecciona que skills desexa instalar!
 

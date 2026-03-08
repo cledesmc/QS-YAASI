@@ -21,13 +21,31 @@ No son comandos genéricos. Cada skill está diseñado para resolver un tipo de 
 
 ## Instalación
 
-### Instalación Rápida
+### Opción 1: Con npx (Recomendado)
 
 ```bash
-cd cli
+npx @mammals-at-work/yacs
+```
+
+Sin necesidad de instalar nada — se ejecuta directamente.
+
+### Opción 2: Instalar globalmente
+
+```bash
+npm install -g @mammals-at-work/yacs
+yacs
+```
+
+### Opción 3: Desde el repositorio
+
+```bash
+git clone https://github.com/munchkin09/YACS.git
+cd YACS/cli
 npm install
 npm start
 ```
+
+---
 
 Selecciona tu idioma, elige dónde instalar los skills y qué skills quieres. ¡Así de fácil!
 

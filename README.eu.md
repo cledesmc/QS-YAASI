@@ -34,13 +34,31 @@ skills/
 
 ## Instalazioa
 
-### Bizkorreko Instalazioa
+### Aukera 1: npx-rekin (Gomendatua)
 
 ```bash
-cd cli
+npx @mammals-at-work/yacs
+```
+
+Ezer instalatu gabe — zuzenean exekutatzen da.
+
+### Aukera 2: Globalmente instalatu
+
+```bash
+npm install -g @mammals-at-work/yacs
+yacs
+```
+
+### Aukera 3: Repositoritatik
+
+```bash
+git clone https://github.com/munchkin09/YACS.git
+cd YACS/cli
 npm install
 npm start
 ```
+
+---
 
 Aukeratu zure hizkuntza eta hautatu nahi dituzun skillak!
 
