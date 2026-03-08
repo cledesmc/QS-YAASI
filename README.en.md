@@ -62,6 +62,20 @@ The installer guides you through:
 - i - Invert selection
 - Enter - Confirm
 
+### Running Tests
+
+The CLI includes a complete test suite that validates:
+- i18n module functionality (7 languages, translations)
+- Skills directory structure
+- Translation file validity
+
+```bash
+cd cli
+node test-runner.js
+```
+
+Expected result: **44 tests passing** with 100% success rate.
+
 ---
 
 ## Skills by Category

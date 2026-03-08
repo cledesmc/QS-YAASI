@@ -19,6 +19,34 @@ No son comandos genéricos. Cada skill está diseñado para resolver un tipo de 
 
 ---
 
+## Instalación
+
+### Instalación Rápida
+
+```bash
+cd cli
+npm install
+npm start
+```
+
+Selecciona tu idioma, elige dónde instalar los skills y qué skills quieres. ¡Así de fácil!
+
+### Ejecución de Tests
+
+El CLI incluye un suite de tests completo que valida:
+- Funcionalidad del módulo i18n (7 idiomas, traducciones)
+- Estructura del directorio de skills
+- Validez de archivos de traducción
+
+```bash
+cd cli
+node test-runner.js
+```
+
+Resultado esperado: **44 tests pasando** con 100% de éxito.
+
+---
+
 ## Estructura
 
 ```
