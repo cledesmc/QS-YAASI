@@ -25,7 +25,7 @@
     "start": "node install.js",
     "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
     "test:watch": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --watch",
-    "prepublishOnly": "rm -rf skills && cp -r ../skills ."
+    "prepublishOnly": "node prepublish.js"
   },
   "keywords": [
     "yacs",
