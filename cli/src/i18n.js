@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const I18N_DIR = path.join(__dirname, 'i18n');
+const I18N_DIR = path.join(__dirname, '..', 'i18n');
 
 // Supported languages
 const SUPPORTED_LANGS = {
