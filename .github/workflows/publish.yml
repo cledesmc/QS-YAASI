@@ -28,6 +28,10 @@ jobs:
 
       - run: npm ci
       - run: npm run build --if-present
+      - name: Do copy
+        run: |
+          cp -r ../skills ./skills
+          cp -r ../agents ./agents
       - run: npm test
       
       - name: Update version in package.json
