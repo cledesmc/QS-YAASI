@@ -1,13 +1,13 @@
 
 # YACS CLI — Yet Another Claude Skills Installer
 
-> The interactive CLI installer for **QS  Skills and Agents** by NttData. Skills and agents live in their own repositories — this repo builds and packages them for distribution.
+> The interactive CLI installer for **QS  Skills and Agents** by NttData Quality services. Skills and agents live in their own repositories — this repo builds and packages them for distribution.
 
 ---
 
 ## What is this?
 
-**YACS CLI** is the installer that fetches, assembles, and installs **Skills** and **Agents** from independent source repositories into your AI editor (Claude Code, Gemini CLI, Codex, GitHub Copilot).
+**YACS CLI** is the installer that fetches, assembles, and installs **Skills** and **Agents** from Quality Services teams skills and agents source repositories into your AI editor (Claude Code, Gemini CLI, Codex, GitHub Copilot).
 
 ### How it works
 
