@@ -1,5 +1,5 @@
 {
-  "name": "@mammals-at-work/yacs",
+  "name": "@nttdata-qs/yacs",
   "version": "0.9.0",
   "description": "Interactive CLI installer for Y.A.C.S. (Yet Another Claude Skills)",
   "type": "module",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mammals-at-work/YACS.git",
+    "url": "git+https://github.com/cledesmc/YACS.git",
     "directory": "cli"
   },
   "files": [
@@ -16,6 +16,9 @@
     "i18n/",
     "skills/",
     "agents/",
+    "yacs.sources.json",
+    "yacs.sources.lock.json",
+    "build.js",
     "package-lock.json"
   ],
   "publishConfig": {
@@ -23,9 +26,11 @@
   },
   "scripts": {
     "start": "node src/install.js",
+    "build": "node build.js",
+    "build:update": "node build.js --update-lock",
     "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
     "test:watch": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --watch",
-    "prepublishOnly": "node prepublish.js"
+    "prepublishOnly": "node build.js"
   },
   "keywords": [
     "yacs",

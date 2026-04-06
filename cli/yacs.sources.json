@@ -1,0 +1,133 @@
+{
+  "skills": [
+    {
+      "name": "adr-writer",
+      "repo": "https://github.com/munchkin09/yacs-skill-adr-writer.git",
+      "ref": "main",
+      "category": "analisis-design-architecture"
+    },
+    {
+      "name": "architecture-spark",
+      "repo": "https://github.com/munchkin09/yacs-skill-architecture-spark.git",
+      "ref": "main",
+      "category": "analisis-design-architecture"
+    },
+    {
+      "name": "pattern-finder",
+      "repo": "https://github.com/munchkin09/yacs-skill-pattern-finder.git",
+      "ref": "main",
+      "category": "analisis-design-architecture"
+    },
+    {
+      "name": "data-debate",
+      "repo": "https://github.com/munchkin09/yacs-skill-data-debate.git",
+      "ref": "main",
+      "category": "data-and-interpretation"
+    },
+    {
+      "name": "data-storyteller",
+      "repo": "https://github.com/munchkin09/yacs-skill-data-storyteller.git",
+      "ref": "main",
+      "category": "data-and-interpretation"
+    },
+    {
+      "name": "deep-research",
+      "repo": "https://github.com/munchkin09/yacs-skill-deep-research.git",
+      "ref": "main",
+      "category": "data-and-interpretation"
+    },
+    {
+      "name": "metric-trap",
+      "repo": "https://github.com/munchkin09/yacs-skill-metric-trap.git",
+      "ref": "main",
+      "category": "data-and-interpretation"
+    },
+    {
+      "name": "code-reviewer",
+      "repo": "https://github.com/munchkin09/yacs-skill-code-reviewer.git",
+      "ref": "main",
+      "category": "development"
+    },
+    {
+      "name": "codebase-visualizer",
+      "repo": "https://github.com/munchkin09/yacs-skill-codebase-visualizer.git",
+      "ref": "main",
+      "category": "development"
+    },
+    {
+      "name": "gamify",
+      "repo": "https://github.com/munchkin09/yacs-skill-gamify.git",
+      "ref": "main",
+      "category": "development"
+    },
+    {
+      "name": "tech-debt-hunter",
+      "repo": "https://github.com/munchkin09/yacs-skill-tech-debt-hunter.git",
+      "ref": "main",
+      "category": "development"
+    },
+    {
+      "name": "brainstorm",
+      "repo": "https://github.com/munchkin09/yacs-skill-brainstorm.git",
+      "ref": "main",
+      "category": "idea-confrontation-and-debate"
+    },
+    {
+      "name": "red-team",
+      "repo": "https://github.com/munchkin09/yacs-skill-red-team.git",
+      "ref": "main",
+      "category": "idea-confrontation-and-debate"
+    },
+    {
+      "name": "llm-safety-checks",
+      "repo": "https://github.com/munchkin09/yacs-skill-llm-safety-checks.git",
+      "ref": "main",
+      "category": "quality-and-security"
+    },
+    {
+      "name": "owasp-guardian",
+      "repo": "https://github.com/munchkin09/yacs-skill-owasp-guardian.git",
+      "ref": "main",
+      "category": "quality-and-security"
+    },
+    {
+      "name": "quality-spark",
+      "repo": "https://github.com/munchkin09/yacs-skill-quality-spark.git",
+      "ref": "main",
+      "category": "quality-and-security"
+    },
+    {
+      "name": "task-flow-planner",
+      "repo": "https://github.com/munchkin09/yacs-skill-task-flow-planner.git",
+      "ref": "main",
+      "category": "quality-and-security"
+    }
+  ],
+  "agents": [
+    {
+      "name": "backend-expert",
+      "repo": "https://github.com/munchkin09/yacs-agent-backend-expert.git",
+      "ref": "main"
+    },
+    {
+      "name": "frontend-expert",
+      "repo": "https://github.com/munchkin09/yacs-agent-frontend-expert.git",
+      "ref": "main"
+    },
+    {
+      "name": "infra-expert",
+      "repo": "https://github.com/munchkin09/yacs-agent-infra-expert.git",
+      "ref": "main"
+    },
+    {
+      "name": "qa-expert",
+      "repo": "https://github.com/munchkin09/yacs-agent-qa-expert.git",
+      "ref": "main"
+    },
+    {
+      "name": "security-expert",
+      "repo": "https://github.com/munchkin09/yacs-agent-security-expert.git",
+      "ref": "main"
+    }
+  ]
+}
