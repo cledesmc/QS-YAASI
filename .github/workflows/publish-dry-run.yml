@@ -37,6 +37,9 @@ jobs:
 
       - run: npm ci
 
+      - name: Build (fetch skills & agents)
+        run: npm run build
+
       - run: npm test
 
       - name: Show .npmrc (censored)
