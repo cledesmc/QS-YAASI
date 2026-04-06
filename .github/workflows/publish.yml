@@ -34,44 +34,44 @@ jobs:
           cp -r ../agents ./agents
       - run: npm test
       
-      - name: Update version in package.json
-        run: |
-          VERSION="${{ github.ref_name }}"
-          VERSION="${VERSION#v}"
-          npm version "$VERSION" --no-git-tag-version
+      # - name: Update version in package.json
+      #   run: |
+      #     VERSION="${{ github.ref_name }}"
+      #     VERSION="${VERSION#v}"
+      #     npm version "$VERSION" --no-git-tag-version
 
-      - run: npm publish --provenance --access public --otp=${{ secrets.NPM_OTP }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # - run: npm publish --provenance --access public --otp=${{ secrets.NPM_OTP }}
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Download and attest published tarball
-        run: |
-          VERSION="${{ github.ref_name }}"
-          VERSION="${VERSION#v}"
-          curl -sL "https://registry.npmjs.org/@mammals-at-work/yacs/-/yacs-${VERSION}.tgz" -o "yacs-${VERSION}.tgz"
+      # - name: Download and attest published tarball
+      #   run: |
+      #     VERSION="${{ github.ref_name }}"
+      #     VERSION="${VERSION#v}"
+      #     curl -sL "https://registry.npmjs.org/@mammals-at-work/yacs/-/yacs-${VERSION}.tgz" -o "yacs-${VERSION}.tgz"
 
-      - name: Generate artifact attestation
-        uses: actions/attest-build-provenance@v2
-        with:
-          subject-path: cli/yacs-*.tgz
+      # - name: Generate artifact attestation
+      #   uses: actions/attest-build-provenance@v2
+      #   with:
+      #     subject-path: cli/yacs-*.tgz
 
-      - name: Create Release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: cli/package.json
-          body: |
-            # Release ${{ github.ref_name }}
+      # - name: Create Release
+      #   uses: softprops/action-gh-release@v1
+      #   with:
+      #     files: cli/package.json
+      #     body: |
+      #       # Release ${{ github.ref_name }}
 
-            Published to npm as `@mammals-at-work/yacs`.
+      #       Published to npm as `@mammals-at-work/yacs`.
 
-            ## Usage
-            ```bash
-            npx @mammals-at-work/yacs
-            ```
+      #       ## Usage
+      #       ```bash
+      #       npx @mammals-at-work/yacs
+      #       ```
 
-            Or clone the repository and run:
-            ```bash
-            cd cli
-            npm install
-            npm start
-            ```
+      #       Or clone the repository and run:
+      #       ```bash
+      #       cd cli
+      #       npm install
+      #       npm start
+      #       ```
