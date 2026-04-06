@@ -3,37 +3,34 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const SKILLS_ROOT = path.join(__dirname, '../../skills');
-const AGENTS_ROOT = path.join(__dirname, '../../agents');
+const SKILLS_ROOT = path.join(__dirname, '../skills');
+const AGENTS_ROOT = path.join(__dirname, '../agents');
+const SOURCES_FILE = path.join(__dirname, '../yacs.sources.json');
+
+// Load sources manifest for dynamic validation
+const sources = JSON.parse(fs.readFileSync(SOURCES_FILE, 'utf-8'));
 
 describe('Skills Directory', () => {
   it('should have skills directory', () => {
     expect(fs.existsSync(SKILLS_ROOT)).toBe(true);
   });
 
-  it('should have skill categories', () => {
+  it('should have skill categories declared in yacs.sources.json', () => {
+    const expectedCategories = [...new Set(sources.skills.map(s => s.category))];
     const categories = fs.readdirSync(SKILLS_ROOT).filter((f) => {
       return fs.statSync(path.join(SKILLS_ROOT, f)).isDirectory();
     });
-    expect(categories.length).toBeGreaterThan(0);
-  });
-
-  it('should have expected categories', () => {
-    const categories = fs.readdirSync(SKILLS_ROOT).filter((f) => {
-      return fs.statSync(path.join(SKILLS_ROOT, f)).isDirectory();
-    });
-
-    const expectedCategories = [
-      'quality-and-security',
-      'development',
-      'analisis-design-architecture',
-      'idea-confrontation-and-debate',
-      'data-and-interpretation',
-    ];
 
     expectedCategories.forEach((cat) => {
       expect(categories).toContain(cat);
     });
+  });
+
+  it('should have all skills declared in yacs.sources.json', () => {
+    for (const skill of sources.skills) {
+      const skillPath = path.join(SKILLS_ROOT, skill.category, skill.name);
+      expect(fs.existsSync(skillPath)).toBe(true);
+    }
   });
 
   it('should have SKILL.md files in all skills', () => {
@@ -56,7 +53,7 @@ describe('Skills Directory', () => {
     });
   });
 
-  it('should have at least 15 skills', () => {
+  it('should have at least as many skills as declared in sources', () => {
     let totalSkills = 0;
     const categories = fs.readdirSync(SKILLS_ROOT).filter((f) => {
       return fs.statSync(path.join(SKILLS_ROOT, f)).isDirectory();
@@ -70,7 +67,7 @@ describe('Skills Directory', () => {
       totalSkills += skills.length;
     });
 
-    expect(totalSkills).toBeGreaterThanOrEqual(15);
+    expect(totalSkills).toBeGreaterThanOrEqual(sources.skills.length);
   });
 });
 
@@ -79,29 +76,11 @@ describe('Agents Directory', () => {
     expect(fs.existsSync(AGENTS_ROOT)).toBe(true);
   });
 
-  it('should have at least 1 agent', () => {
-    const agents = fs.readdirSync(AGENTS_ROOT).filter((f) => {
-      return fs.statSync(path.join(AGENTS_ROOT, f)).isDirectory();
-    });
-    expect(agents.length).toBeGreaterThan(0);
-  });
-
-  it('should have expected agents', () => {
-    const agents = fs.readdirSync(AGENTS_ROOT).filter((f) => {
-      return fs.statSync(path.join(AGENTS_ROOT, f)).isDirectory();
-    });
-
-    const expectedAgents = [
-      'backend-expert',
-      'frontend-expert',
-      'infra-expert',
-      'security-expert',
-      'qa-expert',
-    ];
-
-    expectedAgents.forEach((agent) => {
-      expect(agents).toContain(agent);
-    });
+  it('should have all agents declared in yacs.sources.json', () => {
+    for (const agent of sources.agents) {
+      const agentPath = path.join(AGENTS_ROOT, agent.name);
+      expect(fs.existsSync(agentPath)).toBe(true);
+    }
   });
 
   it('should have AGENT.md files in all agent directories', () => {
